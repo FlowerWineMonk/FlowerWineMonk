@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+    font-family: 'Karla' , sans-serif;
+    border-radius: 5px;
+}
+body{
+    background-color: gray;
+}   
+.layout{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 300px 250px;
+    grid-template-areas: 
+    'header header'
+    'main sidebar'
+    'footer footer'
+    ;
+}
+.header{
+    padding: 20px;
+    grid-area: header;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.one{
+    color: cyan;
+}
+.two{
+    color: hsl(71, 73%, 54%);
+}
+.three{
+    color: gray;
+}
+.five{
+    font-size: 20px;
+}
+.button{
+    background-color: hsl(71, 73%, 54%);
+    text-align: center;
+    width: 90%;
+    height: 20%;
+    border: 3px;
+    border-radius: 5px;
+}
+.hash{
+    color: white;
+    text-decoration: none;
+}
+.main{
+    padding: 20px;
+    grid-area: main;
+    background-color: darkcyan;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar{
+    padding: 20px;
+    grid-area: sidebar;
+    background-color: rgba(0, 255, 255, 0.4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer{
+    color: white;
+    text-align: center;
+    grid-area: footer;
+    background-color: green;
+}
